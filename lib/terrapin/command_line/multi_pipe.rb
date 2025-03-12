@@ -39,7 +39,7 @@ module Terrapin
       end
 
       def read_stream(io)
-        result = ""
+        result = +''
         while partial_result = io.read(8192)
           result << partial_result
         end
